@@ -1,0 +1,172 @@
+.webfront
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.blackOnWhite
+{
+    background-color: white;
+    color: rgb(0,0,0);
+}
+
+#time
+{
+    color: hsl(290,60%,70%);
+}
+
+*
+{
+    background-color: white;
+}
+
+h1
+{
+    color: red;
+    line-height: 2em;
+}
+
+a[href]
+{
+    font-size: 2ex;
+}
+
+img[src="media/img.png"]
+{
+    max-width: 100%;
+    min-width: 0%;
+    max-height: 240px;
+}
+
+a:active
+{
+    background-color:red;
+}
+
+a:hover
+{
+    background-color:yellow;
+}
+
+p,summary
+{
+    font-size: 1rem;
+}
+
+.parentContainer
+{
+    position: relative;
+}
+
+.childContainer
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outerDiv
+{
+    width: 80%;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0in;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.expandWidthDiv
+{
+    width: 70%;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.expandWidthDivBorder
+{
+    width: 70%;
+    margin: 5mm 15% 5mm 15%;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius:25px;
+}
+
+div ul
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+div ol
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+li
+{
+    margin: 0 auto;
+}
+
+.centerText
+{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    grid: auto / auto auto auto;
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 1200px)
+{
+    #unique-grid-container
+    {
+        grid: auto / auto auto auto auto;
+    }
+}
+
+.grid-container > div
+{
+    padding: 5px 0;
+}
+
+summary~audio
+{
+    max-width: 80%;
+}
+
+summary+video
+{
+    width: 320px;
+    height: 240px
+}
+
+div.childContainer
+{
+    font-family: 'Roboto', sans-serif;
+}
